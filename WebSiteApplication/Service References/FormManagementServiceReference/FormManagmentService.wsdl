@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FormManagmentService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61247/FormManagmentService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:61247/FormManagmentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:61247/FormManagmentService.svc?xsd=xsd2" namespace="www.zab.com" />
+      <xsd:import schemaLocation="http://localhost:61247/FormManagmentService.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://localhost:61247/FormManagmentService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/TranslationWebServices" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFormManagmentService_ListForms_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListForms" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_ListForms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListFormsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_ListFormsName_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListFormsName" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_ListFormsName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListFormsNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_AddNewForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewForm" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_AddNewForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_RetrieveForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveForm" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_RetrieveForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_UpdateForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateForm" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_UpdateForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateFormResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_DeleteForm_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteForm" />
+  </wsdl:message>
+  <wsdl:message name="IFormManagmentService_DeleteForm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFormResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFormManagmentService">
+    <wsdl:operation name="ListForms">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormManagmentService/ListForms" message="tns:IFormManagmentService_ListForms_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormManagmentService/ListFormsResponse" message="tns:IFormManagmentService_ListForms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListFormsName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormManagmentService/ListFormsName" message="tns:IFormManagmentService_ListFormsName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormManagmentService/ListFormsNameResponse" message="tns:IFormManagmentService_ListFormsName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormManagmentService/AddNewForm" message="tns:IFormManagmentService_AddNewForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormManagmentService/AddNewFormResponse" message="tns:IFormManagmentService_AddNewForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormManagmentService/RetrieveForm" message="tns:IFormManagmentService_RetrieveForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormManagmentService/RetrieveFormResponse" message="tns:IFormManagmentService_RetrieveForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormManagmentService/UpdateForm" message="tns:IFormManagmentService_UpdateForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormManagmentService/UpdateFormResponse" message="tns:IFormManagmentService_UpdateForm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteForm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormManagmentService/DeleteForm" message="tns:IFormManagmentService_DeleteForm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormManagmentService/DeleteFormResponse" message="tns:IFormManagmentService_DeleteForm_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFormManagmentService" type="tns:IFormManagmentService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListForms">
+      <soap:operation soapAction="http://tempuri.org/IFormManagmentService/ListForms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFormsName">
+      <soap:operation soapAction="http://tempuri.org/IFormManagmentService/ListFormsName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewForm">
+      <soap:operation soapAction="http://tempuri.org/IFormManagmentService/AddNewForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveForm">
+      <soap:operation soapAction="http://tempuri.org/IFormManagmentService/RetrieveForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateForm">
+      <soap:operation soapAction="http://tempuri.org/IFormManagmentService/UpdateForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteForm">
+      <soap:operation soapAction="http://tempuri.org/IFormManagmentService/DeleteForm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FormManagmentService">
+    <wsdl:port name="BasicHttpBinding_IFormManagmentService" binding="tns:BasicHttpBinding_IFormManagmentService">
+      <soap:address location="http://localhost:61247/FormManagmentService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

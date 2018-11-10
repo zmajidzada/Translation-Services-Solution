@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ApplicationManagementService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61247/ApplicationManagementService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:61247/ApplicationManagementService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:61247/ApplicationManagementService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TranslationWebServices" />
+      <xsd:import schemaLocation="http://localhost:61247/ApplicationManagementService.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IApplicationManagementService_AddApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddApplication" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_AddApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_UpdateApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateApplication" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_UpdateApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_RetrieveApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveApplication" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_RetrieveApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_DeleteApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteApplication" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_DeleteApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_ListApplication_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListApplication" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_ListApplication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListApplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_ListApplicationName_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListApplicationName" />
+  </wsdl:message>
+  <wsdl:message name="IApplicationManagementService_ListApplicationName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListApplicationNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IApplicationManagementService">
+    <wsdl:operation name="AddApplication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApplicationManagementService/AddApplication" message="tns:IApplicationManagementService_AddApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApplicationManagementService/AddApplicationResponse" message="tns:IApplicationManagementService_AddApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateApplication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApplicationManagementService/UpdateApplication" message="tns:IApplicationManagementService_UpdateApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApplicationManagementService/UpdateApplicationResponse" message="tns:IApplicationManagementService_UpdateApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveApplication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApplicationManagementService/RetrieveApplication" message="tns:IApplicationManagementService_RetrieveApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApplicationManagementService/RetrieveApplicationResponse" message="tns:IApplicationManagementService_RetrieveApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteApplication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApplicationManagementService/DeleteApplication" message="tns:IApplicationManagementService_DeleteApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApplicationManagementService/DeleteApplicationResponse" message="tns:IApplicationManagementService_DeleteApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListApplication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApplicationManagementService/ListApplication" message="tns:IApplicationManagementService_ListApplication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApplicationManagementService/ListApplicationResponse" message="tns:IApplicationManagementService_ListApplication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListApplicationName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApplicationManagementService/ListApplicationName" message="tns:IApplicationManagementService_ListApplicationName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApplicationManagementService/ListApplicationNameResponse" message="tns:IApplicationManagementService_ListApplicationName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IApplicationManagementService" type="tns:IApplicationManagementService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddApplication">
+      <soap:operation soapAction="http://tempuri.org/IApplicationManagementService/AddApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateApplication">
+      <soap:operation soapAction="http://tempuri.org/IApplicationManagementService/UpdateApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveApplication">
+      <soap:operation soapAction="http://tempuri.org/IApplicationManagementService/RetrieveApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteApplication">
+      <soap:operation soapAction="http://tempuri.org/IApplicationManagementService/DeleteApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListApplication">
+      <soap:operation soapAction="http://tempuri.org/IApplicationManagementService/ListApplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListApplicationName">
+      <soap:operation soapAction="http://tempuri.org/IApplicationManagementService/ListApplicationName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ApplicationManagementService">
+    <wsdl:port name="BasicHttpBinding_IApplicationManagementService" binding="tns:BasicHttpBinding_IApplicationManagementService">
+      <soap:address location="http://localhost:61247/ApplicationManagementService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

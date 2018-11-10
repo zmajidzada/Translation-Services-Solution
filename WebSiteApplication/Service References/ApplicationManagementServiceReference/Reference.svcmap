@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="098cfdeb-3061-4367-a5c9-361786dee839" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61247/ApplicationManagementService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ApplicationManagementService1.xsd" MetadataType="Schema" ID="af9f21d1-8f47-47ed-871b-3cf4e5ffcdfe" SourceId="1" SourceUrl="http://localhost:61247/ApplicationManagementService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ApplicationManagementService.disco" MetadataType="Disco" ID="163446da-4c5b-4d7c-bf21-8b881d4adb18" SourceId="1" SourceUrl="http://localhost:61247/ApplicationManagementService.svc?disco" />
+    <MetadataFile FileName="ApplicationManagementService2.xsd" MetadataType="Schema" ID="a0222442-c0e8-4273-baff-a4dfbc362adb" SourceId="1" SourceUrl="http://localhost:61247/ApplicationManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ApplicationManagementService3.xsd" MetadataType="Schema" ID="2daed56d-acb6-43a5-84b1-aa92e9af2111" SourceId="1" SourceUrl="http://localhost:61247/ApplicationManagementService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ApplicationManagementService.xsd" MetadataType="Schema" ID="a16c7c71-b7c7-46fe-9e5e-c686aecbd34b" SourceId="1" SourceUrl="http://localhost:61247/ApplicationManagementService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ApplicationManagementService.wsdl" MetadataType="Wsdl" ID="fd30c691-e367-4fde-a2e7-15066e800f98" SourceId="1" SourceUrl="http://localhost:61247/ApplicationManagementService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LanguageManagmentService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61247/LanguageManagmentService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:61247/LanguageManagmentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:61247/LanguageManagmentService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/TranslationWebServices" />
+      <xsd:import schemaLocation="http://localhost:61247/LanguageManagmentService.svc?xsd=xsd3" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILanguageManagmentService_AddLanguage_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddLanguage" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_AddLanguage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_RetrieveLanguage_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveLanguage" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_RetrieveLanguage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_RemoveLanguage_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveLanguage" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_RemoveLanguage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_UpdateLanguage_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLanguage" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_UpdateLanguage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLanguageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_DisplayLanguages_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayLanguages" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_DisplayLanguages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisplayLanguagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_ListLanguages_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListLanguages" />
+  </wsdl:message>
+  <wsdl:message name="ILanguageManagmentService_ListLanguages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListLanguagesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILanguageManagmentService">
+    <wsdl:operation name="AddLanguage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILanguageManagmentService/AddLanguage" message="tns:ILanguageManagmentService_AddLanguage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILanguageManagmentService/AddLanguageResponse" message="tns:ILanguageManagmentService_AddLanguage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveLanguage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILanguageManagmentService/RetrieveLanguage" message="tns:ILanguageManagmentService_RetrieveLanguage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILanguageManagmentService/RetrieveLanguageResponse" message="tns:ILanguageManagmentService_RetrieveLanguage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveLanguage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILanguageManagmentService/RemoveLanguage" message="tns:ILanguageManagmentService_RemoveLanguage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILanguageManagmentService/RemoveLanguageResponse" message="tns:ILanguageManagmentService_RemoveLanguage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLanguage">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILanguageManagmentService/UpdateLanguage" message="tns:ILanguageManagmentService_UpdateLanguage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILanguageManagmentService/UpdateLanguageResponse" message="tns:ILanguageManagmentService_UpdateLanguage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisplayLanguages">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILanguageManagmentService/DisplayLanguages" message="tns:ILanguageManagmentService_DisplayLanguages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILanguageManagmentService/DisplayLanguagesResponse" message="tns:ILanguageManagmentService_DisplayLanguages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListLanguages">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILanguageManagmentService/ListLanguages" message="tns:ILanguageManagmentService_ListLanguages_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILanguageManagmentService/ListLanguagesResponse" message="tns:ILanguageManagmentService_ListLanguages_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILanguageManagmentService" type="tns:ILanguageManagmentService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddLanguage">
+      <soap:operation soapAction="http://tempuri.org/ILanguageManagmentService/AddLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveLanguage">
+      <soap:operation soapAction="http://tempuri.org/ILanguageManagmentService/RetrieveLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveLanguage">
+      <soap:operation soapAction="http://tempuri.org/ILanguageManagmentService/RemoveLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLanguage">
+      <soap:operation soapAction="http://tempuri.org/ILanguageManagmentService/UpdateLanguage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisplayLanguages">
+      <soap:operation soapAction="http://tempuri.org/ILanguageManagmentService/DisplayLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListLanguages">
+      <soap:operation soapAction="http://tempuri.org/ILanguageManagmentService/ListLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LanguageManagmentService">
+    <wsdl:port name="BasicHttpBinding_ILanguageManagmentService" binding="tns:BasicHttpBinding_ILanguageManagmentService">
+      <soap:address location="http://localhost:61247/LanguageManagmentService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

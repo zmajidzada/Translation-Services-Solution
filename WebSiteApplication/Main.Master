@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="DatabaseDrivinApplication.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Trans App</title>
+    <link href="Style/Main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="MainData">
+        <div id="Header">Translation-247
+         
+        </div>
+        <div id="Menu">
+            <asp:Panel ID="pnMenu" runat="server">
+
+            <ul>
+                <li> <a href="HomePage.aspx">Home</a></li>
+                <li> <a href="ApplicationPage.aspx">Apps Maintenance</a></li>
+                 <li> <a href="formPage.aspx"> Forms Maintenance</a></li>
+                 <li> <a href="languagespage.aspx">Languages Maintenance </a></li>
+                <li><a href="OperatorAuth.aspx">Logout</a></li> 
+                <li><a href="#"><asp:Label ID="lblUser" runat="server"></asp:Label></a></li>
+            </ul>
+            
+        
+            </asp:Panel>
+         
+        </div>
+        <div id="Content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+        <div id="footer">&copy;Applied Network Solutions  2016</div>
+    </div>
+    </form>
+</body>
+</html>

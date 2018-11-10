@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationWebServices", "TranslationWebServices\TranslationWebServices.csproj", "{869DF2CF-6930-4AC9-AA3B-C338D691690D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSiteApplication", "WebSiteApplication\WebSiteApplication.csproj", "{18AFF596-C476-4F68-AB33-3D641544FBF8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{869DF2CF-6930-4AC9-AA3B-C338D691690D} = {869DF2CF-6930-4AC9-AA3B-C338D691690D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{869DF2CF-6930-4AC9-AA3B-C338D691690D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869DF2CF-6930-4AC9-AA3B-C338D691690D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869DF2CF-6930-4AC9-AA3B-C338D691690D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869DF2CF-6930-4AC9-AA3B-C338D691690D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AFF596-C476-4F68-AB33-3D641544FBF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AFF596-C476-4F68-AB33-3D641544FBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AFF596-C476-4F68-AB33-3D641544FBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AFF596-C476-4F68-AB33-3D641544FBF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

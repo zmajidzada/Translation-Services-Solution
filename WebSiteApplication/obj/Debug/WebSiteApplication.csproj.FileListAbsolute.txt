@@ -1,0 +1,6 @@
+C:\Users\zab\Documents\Visual Studio 2013\TranslationWebServicesSolution\WebSiteApplication\bin\WebSiteApplication.dll.config
+C:\Users\zab\Documents\Visual Studio 2013\TranslationWebServicesSolution\WebSiteApplication\bin\WebSiteApplication.dll
+C:\Users\zab\Documents\Visual Studio 2013\TranslationWebServicesSolution\WebSiteApplication\bin\WebSiteApplication.pdb
+C:\Users\zab\Documents\Visual Studio 2013\TranslationWebServicesSolution\WebSiteApplication\obj\Debug\WebSiteApplication.dll
+C:\Users\zab\Documents\Visual Studio 2013\TranslationWebServicesSolution\WebSiteApplication\obj\Debug\WebSiteApplication.pdb
+C:\Users\zab\Documents\Visual Studio 2013\TranslationWebServicesSolution\WebSiteApplication\obj\Debug\WebSiteApplication.csprojResolveAssemblyReference.cache

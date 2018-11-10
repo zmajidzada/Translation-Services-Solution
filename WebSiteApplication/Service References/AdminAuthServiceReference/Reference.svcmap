@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1ed10be1-10b6-4f89-aa8e-49cfb04059b0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61247/AdminAuthService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdminAuthService.xsd" MetadataType="Schema" ID="d9697315-61f0-47fa-aa92-e1f49288856d" SourceId="1" SourceUrl="http://localhost:61247/AdminAuthService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AdminAuthService.disco" MetadataType="Disco" ID="e1e74358-6576-4673-b04e-054a189329c4" SourceId="1" SourceUrl="http://localhost:61247/AdminAuthService.svc?disco" />
+    <MetadataFile FileName="AdminAuthService.wsdl" MetadataType="Wsdl" ID="a8f4432a-76a1-4496-9ca8-d69800e4a6e8" SourceId="1" SourceUrl="http://localhost:61247/AdminAuthService.svc?wsdl" />
+    <MetadataFile FileName="AdminAuthService1.xsd" MetadataType="Schema" ID="68266927-7f56-466d-9c32-781ed8ad0d4f" SourceId="1" SourceUrl="http://localhost:61247/AdminAuthService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdminAuthService2.xsd" MetadataType="Schema" ID="e64606d0-95cb-47d3-b925-6bb5897a2dc2" SourceId="1" SourceUrl="http://localhost:61247/AdminAuthService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

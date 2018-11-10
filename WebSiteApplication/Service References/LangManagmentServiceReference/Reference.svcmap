@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="380d909d-ade4-4b22-9f08-95ec4cdfd201" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61247/LanguageManagmentService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LanguageManagmentService3.xsd" MetadataType="Schema" ID="d391ea07-9151-424f-9d09-5d3107b0279f" SourceId="1" SourceUrl="http://localhost:61247/LanguageManagmentService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LanguageManagmentService1.xsd" MetadataType="Schema" ID="46cb3505-c91f-4a95-a8b8-7f60e27ef589" SourceId="1" SourceUrl="http://localhost:61247/LanguageManagmentService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LanguageManagmentService.disco" MetadataType="Disco" ID="0a7fb775-a28a-4a6d-ad89-3c68d53b04e0" SourceId="1" SourceUrl="http://localhost:61247/LanguageManagmentService.svc?disco" />
+    <MetadataFile FileName="LanguageManagmentService.xsd" MetadataType="Schema" ID="984cde25-f305-4081-9581-ec7995aa89e0" SourceId="1" SourceUrl="http://localhost:61247/LanguageManagmentService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LanguageManagmentService2.xsd" MetadataType="Schema" ID="2a7040c4-01ba-40e0-9e97-910215dee5be" SourceId="1" SourceUrl="http://localhost:61247/LanguageManagmentService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LanguageManagmentService.wsdl" MetadataType="Wsdl" ID="976e5967-922a-4ea2-ae81-247223db2989" SourceId="1" SourceUrl="http://localhost:61247/LanguageManagmentService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="027f7ece-0437-4a1f-93c7-37fba93a3142" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61247/FormManagmentService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FormManagmentService.xsd" MetadataType="Schema" ID="a782914f-7f62-4ebe-9c9f-5c63ba49de3a" SourceId="1" SourceUrl="http://localhost:61247/FormManagmentService.svc?xsd=xsd0" />
+    <MetadataFile FileName="FormManagmentService2.xsd" MetadataType="Schema" ID="3694b998-afb9-47f8-8277-5376cb4fa478" SourceId="1" SourceUrl="http://localhost:61247/FormManagmentService.svc?xsd=xsd2" />
+    <MetadataFile FileName="FormManagmentService.wsdl" MetadataType="Wsdl" ID="896cd61a-54e5-463b-afd7-2a0110ac022f" SourceId="1" SourceUrl="http://localhost:61247/FormManagmentService.svc?wsdl" />
+    <MetadataFile FileName="FormManagmentService1.xsd" MetadataType="Schema" ID="0144e977-0318-4fb1-a769-c0aed133dd98" SourceId="1" SourceUrl="http://localhost:61247/FormManagmentService.svc?xsd=xsd1" />
+    <MetadataFile FileName="FormManagmentService3.xsd" MetadataType="Schema" ID="fdac2c93-e10f-4556-9782-361aef752286" SourceId="1" SourceUrl="http://localhost:61247/FormManagmentService.svc?xsd=xsd3" />
+    <MetadataFile FileName="FormManagmentService4.xsd" MetadataType="Schema" ID="a3a9dc55-b30c-49af-b1ab-ef6fffa90031" SourceId="1" SourceUrl="http://localhost:61247/FormManagmentService.svc?xsd=xsd4" />
+    <MetadataFile FileName="FormManagmentService.disco" MetadataType="Disco" ID="c4ff53f4-e641-472e-86ac-bbdc511edc02" SourceId="1" SourceUrl="http://localhost:61247/FormManagmentService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
